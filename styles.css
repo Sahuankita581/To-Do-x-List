@@ -1,0 +1,173 @@
+:root {
+  --background: #0b0f2f;
+  --secondaryBackground: #1a1f4a;
+  --purple: #6c63ff;
+  --teal: #24ffee;
+  --text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 420px;
+}
+
+/* TOP CARD */
+.stats-container {
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--purple);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.details {
+  flex: 1;
+  width: 100%;
+}
+
+.details h1 {
+  font-size: 28px;
+}
+
+.details p {
+  opacity: 0.8;
+}
+
+/* PROGRESS BAR */
+#progressBar {
+  width: 100%;
+  height: 12px;
+  background-color: var(--secondaryBackground);
+  border-radius: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background-color: var(--teal);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+/* RIGHT CIRCLE */
+.stats-numbers {
+  width: 80px;
+  height: 80px;
+  background: var(--purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* INPUT FORM */
+form {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 14px;
+  background: var(--secondaryBackground);
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background: var(--purple);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* TASK LIST */
+#task-list {
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.taskItem {
+  background: var(--secondaryBackground);
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task input {
+  width: 20px;
+  height: 20px;
+}
+
+.task p {
+  font-size: 16px;
+}
+
+/* COMPLETED STYLE */
+.completed p {
+  text-decoration: line-through;
+  color: var(--teal);
+}
+
+/* ICON BUTTONS */
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* EDIT BLUE */
+.edit-btn {
+  color: #4da3ff;
+}
+
+/* DELETE RED */
+.delete-btn {
+  color: #ff4d4d;
+}
